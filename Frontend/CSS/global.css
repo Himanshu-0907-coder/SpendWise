@@ -1,0 +1,24 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,Arial,sans-serif;background:#0b1120;color:#fff}
+button,input,select{font:inherit}
+.container{width:100%;min-height:100vh;display:flex}
+.side-bar{width:240px;height:100vh;background:#151f33;position:fixed;left:0;top:0;border-right:1px solid #263650;z-index:10}
+.logo-1{height:80px;display:flex;align-items:center;padding-left:22px;gap:10px}
+.brand-mark{width:31px;height:31px;border-radius:8px;background:#13d9a3;color:#06231d;display:flex;align-items:center;justify-content:center;font-weight:800}
+.brand-name{font-size:18px;font-weight:700}
+.traverse{display:flex;flex-direction:column;margin-top:35px}
+.transactions-item{width:200px;height:45px;padding-left:12px;display:flex;align-items:center;gap:12px;margin-left:20px;margin-bottom:10px;border-radius:7px;color:#a8b2c1;font-size:13px;cursor:pointer;transition:.2s}
+.transactions-item:hover,.transactions-item.active{background:#194365;color:#fff}
+.nav-icon{width:18px;text-align:center}
+.main{margin-left:240px;width:calc(100% - 240px);min-height:100vh}
+.header{height:65px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;border-bottom:1px solid #263650;background:#0b1120}
+.search input{width:260px;height:36px;padding:0 12px;border:1px solid #24415f;border-radius:6px;background:#12213a;color:#fff;outline:none}
+.profile{display:flex;align-items:center;gap:18px}.user{display:flex;align-items:center;gap:8px;color:#d8e1ec;font-size:12px}
+.avatar{width:30px;height:30px;border-radius:50%;background:#28415c;display:flex;align-items:center;justify-content:center}
+.content{padding:24px}
+.page-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.page-heading h1{font-size:22px;font-weight:600}.page-heading p{color:#8b9bb0;font-size:11px;margin-top:5px}
+.primary-btn{border:0;background:#13d9a3;color:#06231d;padding:9px 15px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer}
+.card{background:#10233d;border:1px solid #1d4568;border-radius:7px}
+.empty{padding:30px;text-align:center;color:#8090a5}
+@media(max-width:800px){.side-bar{width:70px}.brand-name,.transactions-item span:not(.nav-icon){display:none}.transactions-item{width:45px;margin-left:12px}.main{margin-left:70px;width:calc(100% - 70px)}}

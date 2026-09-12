@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>SpendWise - Budgets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/global.css"><link rel="stylesheet" href="../CSS/budgets.css"></head>
+<body><div class="container"><div class="sidebar-container"></div><div class="main"><div class="header">
+    <div class="search"><input id="globalSearch" type="text" placeholder="Search transactions..."></div>
+    <div class="profile"><span>🔔</span><div class="user"><div class="avatar">HM</div><span>Himanshu</span></div></div>
+</div>
+<div class="content"><div class="page-heading"><div><h1>Budgets</h1><p>Set spending limits and track your progress.</p></div><button class="primary-btn set-budget-btn">+ Set Budget</button></div>
+<div class="budget-cards" id="budgetCards"></div>
+<div class="budget-bottom"><div class="card overview-card"><h3>Budget Overview</h3><div class="overview-content"><div class="donut-chart"><div class="donut-center"><span>Total Budget</span><strong>Live</strong></div></div><div class="overview-details"><div class="overview-item"><span>Food</span><span>Category budget</span></div><div class="overview-item"><span>Travel</span><span>Category budget</span></div><div class="overview-item"><span>Shopping</span><span>Category budget</span></div></div></div></div>
+<div class="card alerts-card"><h3>Budget Alerts</h3><div class="alert-item"><div>!</div><div><strong>Keep an eye on your spending.</strong><p>Progress is calculated from expense transactions.</p></div></div><div class="alert-item"><div>✓</div><div><strong>Budgets update automatically.</strong><p>Add or edit a transaction to refresh progress.</p></div></div></div></div>
+</div></div></div>
+<div class="budget-modal" id="budgetModal"><div class="budget-modal-content"><div class="modal-header"><h2>Set Budget</h2><button class="close-modal" id="closeModal">&times;</button></div>
+<div class="budget-form"><label>Category</label><select id="budgetCategory"><option value="">Select Category</option><option>Food</option><option>Travel</option><option>Shopping</option><option>Bills</option><option>Entertainment</option><option>Salary</option><option>Other</option></select><label>Budget Amount</label><input id="budgetAmount" type="number" min="1" placeholder="Enter budget amount"><div class="modal-buttons"><button class="cancel-btn" id="cancelBudget">Cancel</button><button class="save-budget-btn" id="saveBudget">Save Budget</button></div></div></div></div>
+<script src="../JS/sidebar.js"></script><script src="../JS/budgets.js"></script></body></html>
